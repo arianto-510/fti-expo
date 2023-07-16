@@ -19,6 +19,40 @@ include './header.php';
 <section class="ftco-section bg-light">
 	<div class="container-fluid px-4">
 		<div class="row">
+			<div class="col-md-6">
+				<h2>Workshop</h2>
+				<p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, praesentium consequatur quo voluptates totam sit aliquam ducimus veniam asperiores hic voluptatibus officiis laborum maiores! Quo architecto rem et minima facere.</p>
+				<img src="./admin/gambar/paper.jpg" class="col-md-12 my-4">
+			</div>
+			<div class="col-md-6">
+				<h2>Alur Pendaftaran</h2>
+				<div>
+					<div class="alert alert-warning" role="alert">
+						<h4 class="alert-heading">Pendaftaran</h4>
+						<p>Untuk masyarakat yang mengalami kerusakan laptop/notebook silahkan untuk datang langsung ke lokasi kegiatan
+						</p>
+					</div>
+					<div class="alert alert-warning" role="alert">
+						<h4 class="alert-heading">Diagnosa</h4>
+						<p>Panitia akan melakukan diagnosa kerusakan laptop/notebook
+						</p>
+					</div>
+					<div class="alert alert-warning" role="alert">
+						<h4 class="alert-heading">Konfirmasi</h4>
+						<p>Panitia akan menginformasikan terkait kerusakan laptop/notebook</p>
+					</div>
+					<div class="alert alert-warning" role="alert">
+						<h4 class="alert-heading">Perbaikan</h4>
+						<p>Setelah Konfirmasi Kerusakan, Laptop/Notebook akan mulai dikerjakan oleh panitia</p>
+					</div>
+					<div class="alert alert-warning" role="alert">
+						<h4 class="alert-heading">Pengembalian</h4>
+						<p>Setelah selesai perbaikan, maka panitia akan menghubungi pemilik laptop/notebook</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
 			<?php $result = mysqli_query($conn, "SELECT * FROM repair");
 			while ($r = mysqli_fetch_row($result)) : ?>
 				<div class="col-md-3 course ftco-animate">

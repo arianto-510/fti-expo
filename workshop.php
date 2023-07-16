@@ -18,6 +18,40 @@ include './header.php';
 <section class="ftco-section bg-light">
   <div class="container">
     <div class="row">
+      <div class="col-md-6">
+        <h2>Workshop</h2>
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, praesentium consequatur quo voluptates totam sit aliquam ducimus veniam asperiores hic voluptatibus officiis laborum maiores! Quo architecto rem et minima facere.</p>
+        <img src="./admin/gambar/paper.jpg" class="col-md-12 my-4">
+      </div>
+      <div class="col-md-6">
+        <h2>Alur Pendaftaran</h2>
+        <div>
+          <div class="alert alert-warning" role="alert">
+            <h4 class="alert-heading">Pendaftaran</h4>
+            <p>Peserta melakukan proses pendaftaran pada link berikut :</p>
+            <a href="https://bit.ly/FREE_WORKSHOP_ITEXPO" target="_blank" class="btn btn-primary">Daftar</a>
+          </div>
+          <div class="alert alert-warning" role="alert">
+            <h4 class="alert-heading">Memilih Workshop</h4>
+            <p>Memilih workshop, mohon untuk memilih workshop yang akan diikuti, setiap peserta boleh memilih lebih dari satu workshop</p>
+          </div>
+          <div class="alert alert-warning" role="alert">
+            <h4 class="alert-heading">Commitment Fee</h4>
+            <p>Pembayaran bisa dilakukan melalui rekening BRI</p>
+            <div class="btn btn-primary"><b>7134 0102 1598 539</b> a.n Enovita Prihatin</div>
+          </div>
+          <div class="alert alert-warning" role="alert">
+            <h4 class="alert-heading">Konfirmasi</h4>
+            <p>Konfirmasi Commitment Fee :</p>
+            <a href="https://bit.ly/CONFIRM_FREEWORKSHOP" target="_blank" class="btn btn-primary">Konfirmasi</a>
+            <hr>
+            <p>Gabung Grup WhatsApp</p>
+            <a href="https://chat.whatsapp.com/GglvgSZSTo8Lg0XhLLGSH7" target="_blank" class="btn btn-primary">Gabung Grup</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <?php
       include './koneksi.php';
       $query = mysqli_query($conn, "SELECT * FROM workshop");

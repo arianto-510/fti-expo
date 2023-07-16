@@ -57,32 +57,32 @@
             <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link" href="speakers.php">
-                    <i class="fas fa-fw fa-chart-area"></i>
+                    <i class="fas fa-fw fa-bell"></i>
                     <span>Speakers</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="paper.php">
-                    <i class="fas fa-fw fa-check"></i>
+                    <i class="fas fa-fw fa-book"></i>
                     <span>Papers</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="patner.php">
-                    <i class="fas fa-fw fa-check"></i>
+                    <i class="fas fa-fw fa-copy"></i>
                     <span>Media Patner</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="sponsor.php">
-                    <i class="fas fa-fw fa-check"></i>
+                    <i class="fas fa-fw fa-copyright"></i>
                     <span>Sponsored</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="support.php">
-                    <i class="fas fa-fw fa-check"></i>
+                    <i class="fas fa-fw fa-id-card"></i>
                     <span>Support By</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="404.php">
-                    <i class="fas fa-fw fa-exclamation-triangle"></i>
+                    <i class="fas fa-fw fa-id-badge"></i>
                     <span>Pameran</span></a>
             </li>
             <li class="nav-item">
@@ -91,7 +91,7 @@
                     <span>Free Repair</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="404.php">
+                <a class="nav-link" href="workshop.php">
                     <i class="fas fa-fw fa-exclamation-triangle"></i>
                     <span>Workshop</span></a>
             </li>

@@ -40,7 +40,8 @@
                     <li class="nav-item"><a href="pameran.php" class="nav-link"><span class="flaticon-jigsaw mr-2"></span>Pameran IT</a></li>
                     <li class="nav-item"><a href="repair.php" class="nav-link"><span class="flaticon-security mr-2"></span>Free Repair</a></li>
                     <li class="nav-item"><a href="workshop.php" class="nav-link"><span class="flaticon-diploma mr-2"></span>Workshop</a></li>
-                    <li class="nav-item"><a href="alur.php" class="nav-link"><span class="flaticon-education mr-2"></span>Alur Submit</a></li>
+                    <li class="nav-item"><a href="contac.php" class="nav-link"><span class="flaticon-education mr-2"></span>Kontak</a></li>
+                    <li class="nav-item"><a href="rundown.php" class="nav-link"><span class="flaticon-education mr-2"></span>Rundown</a></li>
                 </ul>
             </div>
         </div>
