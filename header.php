@@ -24,62 +24,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="bg-top navbar-light">
-        <div class="container">
-            <div class="row no-gutters d-flex align-items-center align-items-stretch">
-                <div class="col-md-4 d-flex align-items-center py-4">
-                    <a class="navbar-brand" href="index.html"> FTI <span>IT-Expo</span></a>
-                </div>
-                <div class="col-lg-8 d-block">
-                    <div class="row d-flex">
-                        <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-                            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-                            <div class="text">
-                                <span>Email</span>
-                                <span>sempatin@fti-usn.ac.id</span>
-                            </div>
-                        </div>
-                        <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-                            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-                            <div class="text">
-                                <span>Call</span>
-                                <span>Call Us: +62 823 4909 5583</span>
-                            </div>
-                        </div>
-                        <div class="col-md topper d-flex align-items-center justify-content-end">
-                            <p class="mb-0">
-                                <a href="#" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
-                                    <span>Apply now</span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+<body style="border: 3px solid-red;">
+    <nav class="navbar navbar-expand-lg navbar-light ftco-navbar-light" id="ftco-navbar">
+        <!-- ftco-navbar-light -->
         <div class="container d-flex align-items-center px-4">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
-            <!-- <form action="#" class="searchform order-lg-last">
-                <div class="form-group d-flex">
-                    <input type="text" class="form-control pl-3" placeholder="Search">
-                    <button type="submit" placeholder="" class="form-control search"><span class="ion-ios-search"></span></button>
-                </div>
-            </form> -->
+
             <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active"><a href="index.php" class="nav-link pl-0">Home</a></li>
-                    <li class="nav-item"><a href="call_paper.php" class="nav-link">Call For Papper</a></li>
-                    <li class="nav-item"><a href="pameran.php" class="nav-link">Pameran IT</a></li>
-                    <li class="nav-item"><a href="repair.php" class="nav-link">Free Repair</a></li>
-                    <li class="nav-item"><a href="workshop.php" class="nav-link">Workshop</a></li>
-                    <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
+                <a class="navbar-brand" href="index.php"> FTI <span>IT-Expo</span></a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.php" class="nav-link pl-0"><span class="flaticon-houses mr-2"></span>Home</a></li>
+                    <li class="nav-item"><a href="call_paper.php" class="nav-link"><span class="flaticon-books mr-2"></span>Sempatin & Call For Paper</a></li>
+                    <li class="nav-item"><a href="pameran.php" class="nav-link"><span class="flaticon-jigsaw mr-2"></span>Pameran IT</a></li>
+                    <li class="nav-item"><a href="repair.php" class="nav-link"><span class="flaticon-security mr-2"></span>Free Repair</a></li>
+                    <li class="nav-item"><a href="workshop.php" class="nav-link"><span class="flaticon-diploma mr-2"></span>Workshop</a></li>
+                    <li class="nav-item"><a href="alur.php" class="nav-link"><span class="flaticon-education mr-2"></span>Alur Submit</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- END nav -->

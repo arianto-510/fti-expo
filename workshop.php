@@ -18,14 +18,14 @@ include './header.php';
 <section class="ftco-section bg-light">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-lg-4 ftco-animate">
-        <?php
-        include './koneksi.php';
-        $query = mysqli_query($conn, "SELECT * FROM workshop");
-        while ($w = mysqli_fetch_assoc($query)) :
-        ?>
+      <?php
+      include './koneksi.php';
+      $query = mysqli_query($conn, "SELECT * FROM workshop");
+      while ($w = mysqli_fetch_assoc($query)) :
+      ?>
+        <div class="col-md-6 col-lg-4 ftco-animate">
           <div class="blog-entry">
-            <a href="blog-single.html" class="block-20 d-flex align-items-end" style="background-image: url('images/<?= $w['gambar']; ?>');">
+            <a href="#" class="block-20 d-flex align-items-end" style="background-image: url('images/<?= $w['gambar']; ?>');">
               <div class="meta-date text-center p-2">
                 <?php $tgl = $w['tanggal'];
                 $d = explode("-", $tgl);
@@ -66,14 +66,14 @@ include './header.php';
               <h3 class="heading"><a href="#"><?= $w['nama']; ?></a></h3>
 
               <p><?= $w['deskripsi']; ?></p>
-              <div class="d-flex align-items-center mt-4">
-                <p class="mb-0"><a href="#" class="btn btn-primary">Regitrasi <span class="ion-ios-arrow-round-forward"></span></a></p>
-              </div>
             </div>
           </div>
+        </div>
+      <?php endwhile; ?>
+      <div class="col-md-12">
+        <h2 class="text-center"><b>Form Registrasi Workshop</b></h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9EgJHStOu4_9tJZ-yM9Ywx3gmPZCLBEiV9mG4kErasQ9Irw/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
-    <?php endwhile; ?>
-
     </div>
   </div>
 </section>
