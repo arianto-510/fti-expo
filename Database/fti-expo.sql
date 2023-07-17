@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 16, 2023 at 07:07 AM
+-- Generation Time: Jul 17, 2023 at 02:02 AM
 -- Server version: 5.7.24
 -- PHP Version: 8.0.1
 
@@ -39,6 +39,25 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
 (1, 'admin', '$2y$10$yJ4AcMht0c6JWsydpKiH0u2tAg5ZJsnJLWMzNUkWE/a5iC4XW8hy.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `belajar`
+--
+
+CREATE TABLE `belajar` (
+  `id` int(11) NOT NULL,
+  `deksripsi` varchar(255) NOT NULL,
+  `gambar` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `belajar`
+--
+
+INSERT INTO `belajar` (`id`, `deksripsi`, `gambar`) VALUES
+(1, 'pnajgan lorem lebih pnajngan', '811686817_gradeBangkit.jpg');
 
 -- --------------------------------------------------------
 
@@ -92,6 +111,25 @@ INSERT INTO `host` (`id`, `nama`, `jenis`, `gambar`) VALUES
 (9, 'Universitas Sulawesi Barat', 'Co-Host', 'UNSULBAR.png'),
 (10, 'Universitas Islam Negeri Alauddin', 'Co-Host', 'UIN.png'),
 (11, 'Institut Sains dan Teknologi AKPRIND Yogyakarta', 'Co-Host', 'IST.png');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pameran`
+--
+
+CREATE TABLE `pameran` (
+  `id` int(11) NOT NULL,
+  `deksripsi` varchar(255) NOT NULL,
+  `gambar` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `pameran`
+--
+
+INSERT INTO `pameran` (`id`, `deksripsi`, `gambar`) VALUES
+(1, 'Lorem ipmsum lebih pnagajanan', '2102417957_Cover.jpg');
 
 -- --------------------------------------------------------
 
@@ -157,10 +195,7 @@ CREATE TABLE `repair` (
 --
 
 INSERT INTO `repair` (`id`, `deksripsi`, `gambar`) VALUES
-(1, 'Servis Laptop dan Maintenence', 'servis1.jpg'),
-(2, 'Install Ulang Sistem Operasi', 'servis2.jpg'),
-(3, 'Perbaikan CD-ROM', 'servis3.jpg'),
-(4, 'Instalasi Aplikasi Pendukung', 'servis4.jpg');
+(5, 'Lorem contoh lebih pnajnga lebih nangan', '256405398_Alm-Uny.jpg');
 
 -- --------------------------------------------------------
 
@@ -183,7 +218,7 @@ CREATE TABLE `speaker` (
 INSERT INTO `speaker` (`id`, `nama`, `tugas`, `jabatan`, `gambar`) VALUES
 (13, 'Dr. H. Nur Ihsan HL, M.Hum', 'Sambutan', 'Rektor Universitas Sembilanbelas November Kolaka', '245020951_rektor.png'),
 (15, 'Ir. Muh. Nurtanzis Sutoyo, S.Kom., M.Cs., IPP  ', 'Sambutan', 'Dekan Fakultas Teknologi Informasi', '1995593441_Dekan.png'),
-(18, 'Romi Satria Wahono, M.Eng., Ph.D', 'Keynote Speaker', '-', '2026811658_romi.png');
+(19, 'Romi Satria Wahono, M.Eng., Ph.D', 'Keynote Speaker', 'Researcher and Technopreneur in Software Enginering, Enterprise Architecture and Data Science', '1976302870_romi.png');
 
 -- --------------------------------------------------------
 
@@ -263,6 +298,12 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `belajar`
+--
+ALTER TABLE `belajar`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `daftar`
 --
 ALTER TABLE `daftar`
@@ -272,6 +313,12 @@ ALTER TABLE `daftar`
 -- Indexes for table `host`
 --
 ALTER TABLE `host`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `pameran`
+--
+ALTER TABLE `pameran`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -327,6 +374,12 @@ ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `belajar`
+--
+ALTER TABLE `belajar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `daftar`
 --
 ALTER TABLE `daftar`
@@ -337,6 +390,12 @@ ALTER TABLE `daftar`
 --
 ALTER TABLE `host`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `pameran`
+--
+ALTER TABLE `pameran`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `paper`
@@ -354,13 +413,13 @@ ALTER TABLE `patner`
 -- AUTO_INCREMENT for table `repair`
 --
 ALTER TABLE `repair`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `speaker`
 --
 ALTER TABLE `speaker`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `sponsor`
