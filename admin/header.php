@@ -81,12 +81,12 @@
                     <span>Support By</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="404.php">
+                <a class="nav-link" href="pameran.php">
                     <i class="fas fa-fw fa-id-badge"></i>
                     <span>Pameran</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="404.php">
+                <a class="nav-link" href="repair.php">
                     <i class="fas fa-fw fa-check"></i>
                     <span>Free Repair</span></a>
             </li>
@@ -94,11 +94,6 @@
                 <a class="nav-link" href="workshop.php">
                     <i class="fas fa-fw fa-exclamation-triangle"></i>
                     <span>Workshop</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="404.php">
-                    <i class="fas fa-fw fa-info-circle"></i>
-                    <span>Kontak</span></a>
             </li>
 
             <!-- Divider -->

@@ -6,14 +6,14 @@ if ($_SESSION['status'] != 'login') {
 }
 include '../koneksi.php';
 include './header.php';
-$result = mysqli_query($conn, "SELECT * FROM belajar");
+$result = mysqli_query($conn, "SELECT * FROM repair");
 ?>
 <div class="container-fluid">
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Workshop</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Free Repair</h6>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -34,7 +34,7 @@ $result = mysqli_query($conn, "SELECT * FROM belajar");
                                 <td><?= $p['deksripsi']; ?></td>
                                 <td><img src="./gambar/<?= $p['gambar']; ?>" width="180px"></td>
                                 <td>
-                                    <a href="edit-workshop.php?id=<?= $p['id']; ?>" class="btn btn-success btn-circle">
+                                    <a href="edit-repair.php?id=<?= $p['id']; ?>" class="btn btn-success btn-circle">
                                         <i class="fas fa-info-circle"></i>
                                     </a>
                                 </td>

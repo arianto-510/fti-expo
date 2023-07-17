@@ -16,13 +16,18 @@ include './header.php';
 	</div>
 </section>
 
+<?php
+$result = mysqli_query($conn, "SELECT * FROM repair");
+$r = mysqli_fetch_assoc($result);
+?>
+
 <section class="ftco-section bg-light">
 	<div class="container-fluid px-4">
 		<div class="row">
 			<div class="col-md-6">
-				<h2>Workshop</h2>
-				<p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, praesentium consequatur quo voluptates totam sit aliquam ducimus veniam asperiores hic voluptatibus officiis laborum maiores! Quo architecto rem et minima facere.</p>
-				<img src="./admin/gambar/paper.jpg" class="col-md-12 my-4">
+				<h2>Free Repair</h2>
+				<p class="text-justify"><?= $r['deksripsi']; ?></p>
+				<img src="./admin/gambar/<?= $r['gambar']; ?>" class="col-md-12 my-4">
 			</div>
 			<div class="col-md-6">
 				<h2>Alur Pendaftaran</h2>
@@ -51,14 +56,6 @@ include './header.php';
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<?php $result = mysqli_query($conn, "SELECT * FROM repair");
-			while ($r = mysqli_fetch_row($result)) : ?>
-				<div class="col-md-3 course ftco-animate">
-					<div class="img" style="background-image: url('./images/<?php echo $r[2]; ?>');"></div>
-				</div>
-			<?php endwhile; ?>
 		</div>
 	</div>
 </section>

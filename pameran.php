@@ -1,4 +1,10 @@
 <?php
+include './koneksi.php';
+
+$result = mysqli_query($conn, "SELECT * FROM pameran");
+
+$p = mysqli_fetch_assoc($result);
+
 include './header.php';
 ?>
 
@@ -19,13 +25,10 @@ include './header.php';
 		<div class="row">
 			<div class="col-md-4">
 				<h2>Tentang Pameran IT</h2>
-				<p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quia accusamus. Expedita voluptatum perferendis temporibus facere dolorem minus fuga sint non sit quis nesciunt laboriosam laudantium ad molestias, in inventore.</p>
-
-				<h5>Tanggal Pelaksanaan</h5>
-				<p>4 September 2023</p>
+				<p align="justify"><?= $p['deksripsi']; ?></p>
 			</div>
 			<div class="col-md-8">
-				<img src="./admin/gambar/paper.jpg" class="col-md-12">
+				<img src="./admin/gambar/<?= $p['gambar']; ?>" class="col-md-12">
 			</div>
 		</div>
 	</div>

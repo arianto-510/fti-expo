@@ -115,7 +115,7 @@ include './header.php';
 	<div class="container">
 		<div class="row d-flex">
 			<div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
-				<div class="img" style="background-image: url(images/course-8.jpg);"></div>
+				<div class="img" style="background-image: url(./images/paper.jpg);"></div>
 			</div>
 			<div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
 				<h2 class="mb-4">Rangkaian Kegiatan IT Expo :</h2>

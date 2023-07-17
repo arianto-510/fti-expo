@@ -1,4 +1,10 @@
 <?php
+include './koneksi.php';
+
+$result = mysqli_query($conn, "SELECT * FROM belajar");
+
+$w = mysqli_fetch_assoc($result);
+
 include './header.php';
 ?>
 
@@ -20,8 +26,8 @@ include './header.php';
     <div class="row">
       <div class="col-md-6">
         <h2>Workshop</h2>
-        <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, praesentium consequatur quo voluptates totam sit aliquam ducimus veniam asperiores hic voluptatibus officiis laborum maiores! Quo architecto rem et minima facere.</p>
-        <img src="./admin/gambar/paper.jpg" class="col-md-12 my-4">
+        <p class="text-justify"><?= $w['deksripsi']; ?></p>
+        <img src="./admin/gambar/<?= $w['gambar']; ?>" class="col-md-12 my-4">
       </div>
       <div class="col-md-6">
         <h2>Alur Pendaftaran</h2>

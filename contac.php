@@ -22,13 +22,14 @@ include './header.php';
       <div class="col-md-3 d-flex">
         <div class="bg-light align-self-stretch box p-4 text-center">
           <h3 class="mb-4">Alamat</h3>
-          <p>Fakultas Teknologi Informasi, Tanggetada, Kolaka</p>
+          <p>Jl. Pemuda, Tahoa, Kec. Kolaka, Kabupaten Kolaka, Sulawesi Tenggara 93561</p>
         </div>
       </div>
       <div class="col-md-3 d-flex">
         <div class="bg-light align-self-stretch box p-4 text-center">
           <h3 class="mb-4">Telepon</h3>
-          <p><a href="tel://082349095583">+62 823 4909 5583</a></p>
+          <p><a href="tel://085299641235">+62 852 9964 1235 - Suharsono Bantun</a></p>
+          <p><a href="tel://085341502090">+62 853 4150 2090 - Jayanti Yusmasari</a></p>
         </div>
       </div>
       <div class="col-md-3 d-flex">
@@ -40,7 +41,7 @@ include './header.php';
       <div class="col-md-3 d-flex">
         <div class="bg-light align-self-stretch box p-4 text-center">
           <h3 class="mb-4">Website</h3>
-          <p><a href="#">yoursite.com</a></p>
+          <p><a href="#">fti.usn.ac.id/itexpo</a></p>
         </div>
       </div>
     </div>
