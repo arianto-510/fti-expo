@@ -36,12 +36,12 @@
                 <a class="navbar-brand" href="index.php"> FTI <span>IT-Expo</span></a>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="index.php" class="nav-link pl-0"><span class="flaticon-houses mr-2"></span>Home</a></li>
-                    <li class="nav-item"><a href="call_paper.php" class="nav-link"><span class="flaticon-books mr-2"></span>Sempatin & Call For Paper</a></li>
+                    <li class="nav-item"><a href="call_paper.php" class="nav-link"><span class="flaticon-books mr-2"></span>SEMPATIN & Call For Paper</a></li>
                     <li class="nav-item"><a href="pameran.php" class="nav-link"><span class="flaticon-jigsaw mr-2"></span>Pameran IT</a></li>
                     <li class="nav-item"><a href="repair.php" class="nav-link"><span class="flaticon-security mr-2"></span>Free Repair</a></li>
                     <li class="nav-item"><a href="workshop.php" class="nav-link"><span class="flaticon-diploma mr-2"></span>Workshop</a></li>
-                    <li class="nav-item"><a href="contac.php" class="nav-link"><span class="flaticon-education mr-2"></span>Kontak</a></li>
                     <li class="nav-item"><a href="rundown.php" class="nav-link"><span class="flaticon-education mr-2"></span>Rundown</a></li>
+                    <li class="nav-item"><a href="contac.php" class="nav-link"><span class="flaticon-education mr-2"></span>Kontak</a></li>
                 </ul>
             </div>
         </div>

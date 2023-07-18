@@ -6,13 +6,8 @@ if ($_SESSION['status'] != 'login') {
 }
 include '../koneksi.php';
 
-$id = $_GET['id'];
-
-$result = mysqli_query($conn, "SELECT * FROM belajar WHERE id = '$id'");
-
-$r = mysqli_fetch_assoc($result);
-
-if (isset($_POST['edit'])) {
+if (isset($_POST['tambah'])) {
+    $nama = $_POST['nama'];
     $deskripsi = $_POST['deskripsi'];
 
     $rand = rand();
@@ -22,10 +17,10 @@ if (isset($_POST['edit'])) {
     $gambar = $rand . '_' . $filename;
     move_uploaded_file($_FILES['gambar']['tmp_name'], 'gambar/' . $rand . '_' . $filename);
 
-    mysqli_query($conn, "UPDATE belajar SET deksripsi = '$deskripsi', gambar = '$gambar' WHERE id = '$id'");
+    mysqli_query($conn, "INSERT INTO banner VALUES(null, '$nama' ,'$deskripsi', '$gambar')");
 
     if (mysqli_affected_rows($conn) > 0) {
-        header("Location: workshop.php");
+        header("Location: banner.php");
     } else {
         echo "Gagal";
     }
@@ -39,20 +34,24 @@ include './header.php';
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Edit Workshop</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Tambah Banner</h6>
         </div>
         <div class="card-body">
 
             <form method="post" enctype="multipart/form-data">
                 <div class="mb-3">
+                    <label class="form-label">Nama Kegiatan</label>
+                    <input type="text" class="form-control" name="nama">
+                </div>
+                <div class="mb-3">
                     <label class="form-label">Deskripsi</label>
-                    <input type="text" class="form-control" name="deskripsi" value="<?= $r['deksripsi']; ?>">
+                    <input type="text" class="form-control" name="deskripsi">
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Gambar</label>
                     <input type="file" class="form-control" name="gambar">
                 </div>
-                <button class="btn btn-primary" name="edit">Edit</button>
+                <button class="btn btn-primary" name="tambah">Tambah</button>
             </form>
         </div>
 

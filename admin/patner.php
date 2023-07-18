@@ -33,8 +33,8 @@ $result = mysqli_query($conn, "SELECT * FROM patner");
                                 <td><?= $s['nama']; ?></td>
                                 <td><img src="./gambar/<?= $s['gambar']; ?>" width="180px"></td>
                                 <td>
-                                    <a href="hapus-sponsor.php?id=<?= $s['id']; ?>" class="btn btn-success btn-circle">
-                                        <i class="fas fa-warning-circle"></i>
+                                    <a href="hapus-patner.php?id=<?= $s['id']; ?>" class="btn btn-danger btn-circle">
+                                        <i class="fas fa-trash"></i>
                                     </a>
                                 </td>
                             </tr>

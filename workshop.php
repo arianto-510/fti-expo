@@ -35,7 +35,7 @@ include './header.php';
           <div class="alert alert-warning" role="alert">
             <h4 class="alert-heading">Pendaftaran</h4>
             <p>Peserta melakukan proses pendaftaran pada link berikut :</p>
-            <a href="https://bit.ly/FREE_WORKSHOP_ITEXPO" target="_blank" class="btn btn-primary">Daftar</a>
+            <a href="#regis" class="btn btn-primary">Daftar</a>
           </div>
           <div class="alert alert-warning" role="alert">
             <h4 class="alert-heading">Memilih Workshop</h4>
@@ -103,14 +103,14 @@ include './header.php';
               </div>
             </a>
             <div class="text bg-white p-4">
-              <h3 class="heading"><a href="#"><?= $w['nama']; ?></a></h3>
+              <h3 class="heading"><?= $w['nama']; ?></h3>
 
               <p><?= $w['deskripsi']; ?></p>
             </div>
           </div>
         </div>
       <?php endwhile; ?>
-      <div class="col-md-12">
+      <div class="col-md-12" id="regis">
         <h2 class="text-center"><b>Form Registrasi Workshop</b></h2>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd9EgJHStOu4_9tJZ-yM9Ywx3gmPZCLBEiV9mG4kErasQ9Irw/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>

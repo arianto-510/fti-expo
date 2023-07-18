@@ -95,6 +95,11 @@
                     <i class="fas fa-fw fa-exclamation-triangle"></i>
                     <span>Workshop</span></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="banner.php">
+                    <i class="fas fa-fw fa-exclamation-triangle"></i>
+                    <span>Banner</span></a>
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

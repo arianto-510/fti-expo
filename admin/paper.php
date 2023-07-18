@@ -49,12 +49,4 @@ $result = mysqli_query($conn, "SELECT * FROM paper");
 
 </div>
 
-<!-- <td><?= $p['register']; ?></td>
-<td><?= $p['template']; ?></td>
-<td><?= $p['submit']; ?></td>
-<td><?= $p['tgl_kumpul']; ?></td>
-<td><?= $p['tgl_pengumuman']; ?></td>
-<td><?= $p['tgl_revisi']; ?></td>
-<td><?= $p['tgl_kegiatan']; ?></td> -->
-
 <?php include './footer.php'; ?>

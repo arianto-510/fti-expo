@@ -51,11 +51,11 @@ $patner = mysqli_query($conn, "SELECT * FROM patner");
     <div class="row">
         <div class="col-md-12 text-center">
 
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <p>
                 Copyright &copy;<script>
                     document.write(new Date().getFullYear());
-                </script> All rights reserved | Develop by <i class="icon-heart" aria-hidden="true"></i> by <a href="https://github.com/arianto-510" target="_blank">Popa Learn</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                </script> All rights reserved
+            </p>
         </div>
     </div>
     </div>

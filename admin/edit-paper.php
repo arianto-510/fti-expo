@@ -16,6 +16,7 @@ if (isset($_POST['edit'])) {
     $register = htmlspecialchars($_POST['register']);
     $submit = htmlspecialchars($_POST['submit']);
     $template = htmlspecialchars($_POST['template']);
+    $background = htmlspecialchars($_POST['background']);
     $tgl_kumpul = htmlspecialchars($_POST['tgl_kumpul']);
     $tgl_pengumuman = htmlspecialchars($_POST['tgl_pengumuman']);
     $tgl_revisi = htmlspecialchars($_POST['tgl_revisi']);
@@ -28,7 +29,7 @@ if (isset($_POST['edit'])) {
     $gambar = $rand . '_' . $filename;
     move_uploaded_file($_FILES['gambar']['tmp_name'], 'gambar/' . $rand . '_' . $filename);
 
-    mysqli_query($conn, "UPDATE paper SET tentang = '$tentang', register = '$register', template = '$template', submit = '$submit', tgl_kumpul = '$tgl_kumpul',  tgl_pengumuman = '$tgl_pengumuman', tgl_revisi = '$tgl_revisi', tgl_kegiatan = '$tgl_kegiatan', gambar = '$gambar' WHERE id = '$id'");
+    mysqli_query($conn, "UPDATE paper SET tentang = '$tentang', register = '$register', template = '$template', submit = '$submit', background = '$background', tgl_kumpul = '$tgl_kumpul',  tgl_pengumuman = '$tgl_pengumuman', tgl_revisi = '$tgl_revisi', tgl_kegiatan = '$tgl_kegiatan', gambar = '$gambar' WHERE id = '$id'");
 
     if (mysqli_affected_rows($conn) > 0) {
         header("Location: paper.php");
@@ -62,6 +63,10 @@ include './header.php';
                     <div class="mb-3">
                         <label class="form-label">Link Template</label>
                         <input type="text" class="form-control" name="template" placeholder="https://example.com" value="<?= $p[3] ?>">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Link Background</label>
+                        <input type="text" class="form-control" name="background" placeholder="https://example.com" value="<?= $p[3] ?>">
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Link Submit</label>

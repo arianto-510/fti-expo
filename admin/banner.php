@@ -1,40 +1,44 @@
 <?php
+session_start();
+
+if ($_SESSION['status'] != 'login') {
+    header("Location: index.php?pesan=ilegal");
+}
 include '../koneksi.php';
 include './header.php';
-
-$result = mysqli_query($conn, "SELECT * FROM sponsor");
-
+$result = mysqli_query($conn, "SELECT * FROM banner");
 ?>
-
 <div class="container-fluid">
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Sponsor</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Pameran</h6>
         </div>
         <div class="card-body">
-            <a href="tambah-sponsor.php" class="btn btn-primary my-3">Tambah Sponsor</a>
+            <a href="tambah-banner.php" class="btn btn-primary my-2">Tambah</a>
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Nama</th>
+                            <th>Deskrispi</th>
                             <th>Gambar</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php $i = 1; ?>
-                        <?php while ($s = mysqli_fetch_assoc($result)) : ?>
+                        <?php while ($p = mysqli_fetch_assoc($result)) : ?>
                             <tr>
                                 <td><?= $i; ?></td>
-                                <td><?= $s['nama']; ?></td>
-                                <td><img src="./gambar/<?= $s['gambar']; ?>" width="180px"></td>
+                                <td><?= $p['nama']; ?></td>
+                                <td><?= $p['deskripsi']; ?></td>
+                                <td><img src="./gambar/<?= $p['gambar']; ?>" width="180px"></td>
                                 <td>
-                                    <a href="hapus-sponsor.php?id=<?= $s['id']; ?>" class="btn btn-danger btn-circle">
-                                        <i class="fas fa-trash"></i>
+                                    <a href="edit-pameran.php?id=<?= $p['id']; ?>" class="btn btn-success btn-circle">
+                                        <i class="fas fa-info-circle"></i>
                                     </a>
                                 </td>
                             </tr>
@@ -48,6 +52,4 @@ $result = mysqli_query($conn, "SELECT * FROM sponsor");
 
 </div>
 
-<?php
-include './footer.php';
-?>
+<?php include './footer.php'; ?>

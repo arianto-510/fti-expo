@@ -40,18 +40,18 @@ include './header.php';
         </div>
         <div>
           <h2 class="mt-4">Link Penting</h2>
-          <a class="btn btn-primary my-2" href="<?= $p['register']; ?>" target="_blank">Registrasi Peserta Dengar</a>
-          <a class="btn btn-primary my-2" href="<?= $p['register']; ?>" target="_blank">Registrasi Makalah</a>
+          <a class="btn btn-primary my-2" href="<?= $p['register']; ?>">Registrasi Peserta Dengar</a>
+          <a class="btn btn-primary my-2" href="<?= $p['register']; ?>">Registrasi Makalah</a>
           <a class="btn btn-primary my-2" href="<?= $p['submit']; ?>" target="_blank">Submit Publikasi</a>
           <a href="<?= $p['template']; ?>" target="_blank" class="btn btn-primary my-2">Download Template Publikasi</a>
-          <a href="#" target="_blank" class="btn btn-primary my-2">Virtual Background</a>
+          <a href="<?= $p['background']; ?>" target="_blank" class="btn btn-primary my-2">Virtual Background</a>
         </div>
         <h2>Alur Pendaftaran</h2>
         <div>
           <div class="alert alert-warning" role="alert">
             <h4 class="alert-heading">Pendaftaran</h4>
             <p>Peserta melakukan proses pendaftaran pada link berikut :</p>
-            <a href="<?= $p['register']; ?>" target="_blank" class="btn btn-primary">Daftar</a>
+            <a href="<?= $p['register']; ?>" class="btn btn-primary">Daftar</a>
           </div>
           <div class="alert alert-warning" role="alert">
             <h4 class="alert-heading">Penulisan</h4>
@@ -69,7 +69,7 @@ include './header.php';
             <div class="btn btn-primary"><b>0604010597508</b> a.n Suharsono Bantun</div>
             <hr>
             <p>Konfirmasi pembayaran :</p>
-            <a href="https://wa.me/6285299641235" target="_blank" class="btn btn-primary">Konfirmasi</a>
+            <a href="https://forms.gle/bHBZr3Bx6Qp9yYue6" target="_blank" class="btn btn-primary">Konfirmasi Pembayaran</a>
             <hr>
             <p>Gabung Grup WhatsApp</p>
             <a href="https://chat.whatsapp.com/GVJp9Ke5FLs2t1hb3cUf7F" target="_blank" class="btn btn-primary">Gabung Grup</a>
@@ -95,10 +95,35 @@ include './header.php';
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row" id="regis">
+      <h2 class="text-center"><b>Form Registrasi Seminar</b></h2>
       <div class="col-md-12">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzsqe4w86Nvwg2NIjslEGih-DhSQXZrgvFnynfV8zqrXv69g/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section testimony-section">
+  <div class="container">
+    <div class="row justify-content-center mb-5 pb-2">
+      <div class="col-md-8 text-center heading-section ftco-animate">
+        <h2 class="mb-4">Host & Co-Host</h2>
+      </div>
+    </div>
+    <div class="row ftco-animate justify-content-center">
+      <?php $result = mysqli_query($conn, "SELECT * FROM host");
+      while ($h = mysqli_fetch_assoc($result)) : ?>
+        <div class="col-md-3">
+          <div class="card mt-2" style="border: 0;">
+            <div class="text-center">
+              <p class="mt-2"><?= $h['jenis']; ?></p>
+              <img src="./admin/gambar/<?= $h['gambar']; ?>" width="60px">
+              <h6 class="card-title mt-2 mx-2"><?= $h['nama']; ?></h6>
+            </div>
+          </div>
+        </div>
+      <?php endwhile; ?>
     </div>
   </div>
 </section>
