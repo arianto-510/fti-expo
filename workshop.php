@@ -33,21 +33,21 @@ include './header.php';
         <h2>Alur Pendaftaran</h2>
         <div>
           <div class="alert alert-warning" role="alert">
-            <h4 class="alert-heading">Pendaftaran</h4>
+            <h4 class="alert-heading">1. Pendaftaran</h4>
             <p>Peserta melakukan proses pendaftaran pada link berikut :</p>
             <a href="#regis" class="btn btn-primary">Daftar</a>
           </div>
           <div class="alert alert-warning" role="alert">
-            <h4 class="alert-heading">Memilih Workshop</h4>
+            <h4 class="alert-heading">2. Memilih Workshop</h4>
             <p>Memilih workshop, mohon untuk memilih workshop yang akan diikuti, setiap peserta boleh memilih lebih dari satu workshop</p>
           </div>
           <div class="alert alert-warning" role="alert">
-            <h4 class="alert-heading">Commitment Fee</h4>
+            <h4 class="alert-heading">3. Commitment Fee</h4>
             <p>Pembayaran bisa dilakukan melalui rekening BRI</p>
             <div class="btn btn-primary"><b>7134 0102 1598 539</b> a.n Enovita Prihatin</div>
           </div>
           <div class="alert alert-warning" role="alert">
-            <h4 class="alert-heading">Konfirmasi</h4>
+            <h4 class="alert-heading">4. Konfirmasi</h4>
             <p>Konfirmasi Commitment Fee :</p>
             <a href="https://bit.ly/CONFIRM_FREEWORKSHOP" target="_blank" class="btn btn-primary">Konfirmasi</a>
             <hr>

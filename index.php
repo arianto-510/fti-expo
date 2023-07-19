@@ -252,7 +252,7 @@ include './header.php';
 </section>
 
 <script>
-	const tglTujuan = new Date('Sep 2, 2023 06:00:00').getTime();
+	const tglTujuan = new Date('Sep 4, 2023 06:00:00').getTime();
 
 	const mundur = setInterval(function() {
 		const tglSekarang = new Date().getTime();

@@ -33,25 +33,25 @@ $r = mysqli_fetch_assoc($result);
 				<h2>Alur Pendaftaran</h2>
 				<div>
 					<div class="alert alert-warning" role="alert">
-						<h4 class="alert-heading">Pendaftaran</h4>
+						<h4 class="alert-heading">1. Pendaftaran</h4>
 						<p>Untuk masyarakat yang mengalami kerusakan laptop/notebook silahkan untuk datang langsung ke lokasi kegiatan
 						</p>
 					</div>
 					<div class="alert alert-warning" role="alert">
-						<h4 class="alert-heading">Diagnosa</h4>
+						<h4 class="alert-heading">2. Diagnosa</h4>
 						<p>Panitia akan melakukan diagnosa kerusakan laptop/notebook
 						</p>
 					</div>
 					<div class="alert alert-warning" role="alert">
-						<h4 class="alert-heading">Konfirmasi</h4>
+						<h4 class="alert-heading">3. Konfirmasi</h4>
 						<p>Panitia akan menginformasikan terkait kerusakan laptop/notebook</p>
 					</div>
 					<div class="alert alert-warning" role="alert">
-						<h4 class="alert-heading">Perbaikan</h4>
+						<h4 class="alert-heading">4. Perbaikan</h4>
 						<p>Setelah Konfirmasi Kerusakan, Laptop/Notebook akan mulai dikerjakan oleh panitia</p>
 					</div>
 					<div class="alert alert-warning" role="alert">
-						<h4 class="alert-heading">Pengembalian</h4>
+						<h4 class="alert-heading">5. Pengembalian</h4>
 						<p>Setelah selesai perbaikan, maka panitia akan menghubungi pemilik laptop/notebook</p>
 					</div>
 				</div>

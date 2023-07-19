@@ -5,12 +5,22 @@ $patner = mysqli_query($conn, "SELECT * FROM patner");
 
 ?>
 
-<footer class="ftco-footer ftco-bg-dark ftco-section">
+<footer class="ftco-footer bg-light ftco-section">
     <div class="container">
         <div class="row mb-5">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-3">
                 <div class="ftco-footer-widget mb-3 text-center">
-                    <h2 class="ftco-heading-2">Support By : </h2>
+                    <h2 class="ftco-heading-2 text-dark">Organized By: </h2>
+                    <div class="row">
+                        <div class="col-md-12 my-2">
+                            <img src="./admin/gambar/USN.png" height="80px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="ftco-footer-widget mb-3 text-center">
+                    <h2 class="ftco-heading-2 text-dark">Supported By : </h2>
                     <?php while ($s = mysqli_fetch_assoc($support)) : ?>
                         <div class="row">
                             <div class="col-md-12 my-2">
@@ -20,9 +30,9 @@ $patner = mysqli_query($conn, "SELECT * FROM patner");
                     <?php endwhile; ?>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-3">
                 <div class="ftco-footer-widget mb-3 text-center">
-                    <h2 class="ftco-heading-2">Sponsored By : </h2>
+                    <h2 class="ftco-heading-2 text-dark">Sponsored By : </h2>
                     <?php while ($s = mysqli_fetch_assoc($result)) : ?>
                         <div class="row">
                             <div class="col-md-12 my-2">
@@ -34,9 +44,9 @@ $patner = mysqli_query($conn, "SELECT * FROM patner");
             </div>
 
 
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-3">
                 <div class="ftco-footer-widget mb-3 text-center">
-                    <h2 class="ftco-heading-2">Media Partner : </h2>
+                    <h2 class="ftco-heading-2 text-dark">Media Partner : </h2>
                     <?php while ($s = mysqli_fetch_assoc($patner)) : ?>
                         <div class="row">
                             <div class="col-md-12 my-2">
@@ -51,7 +61,7 @@ $patner = mysqli_query($conn, "SELECT * FROM patner");
     <div class="row">
         <div class="col-md-12 text-center">
 
-            <p>
+            <p class="text-dark">
                 Copyright &copy;<script>
                     document.write(new Date().getFullYear());
                 </script> All rights reserved

@@ -33,7 +33,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="ftco-nav">
-                <a class="navbar-brand" href="index.php"> FTI <span>IT-Expo</span></a>
+                <a class="navbar-brand" href="index.php"><img src="./images/logo.png" width="80"></a>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="index.php" class="nav-link pl-0"><span class="flaticon-houses mr-2"></span>Home</a></li>
                     <li class="nav-item"><a href="call_paper.php" class="nav-link"><span class="flaticon-books mr-2"></span>SEMPATIN & Call For Paper</a></li>

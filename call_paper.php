@@ -13,6 +13,39 @@ include './header.php';
   </div>
 </section>
 
+<section class="ftco-section bg-light">
+  <div class="container-fluid px-4">
+    <div class="row justify-content-center mb-5 pb-2">
+      <div class="col-md-8 text-center heading-section ftco-animate">
+        <h2 class="mb-4">Our Speakers</h2>
+      </div>
+    </div>
+    <div class="row">
+      <?php
+      include './koneksi.php';
+      $query = mysqli_query($conn, "SELECT * FROM speaker");
+      ?>
+      <?php while ($s = mysqli_fetch_assoc($query)) : ?>
+        <div class="col-md-6 col-lg-3 ftco-animate">
+          <div class="staff">
+            <div class="img-wrap d-flex align-items-stretch">
+              <div class="img align-self-stretch" style="background-image: url(admin/gambar/<?= $s['gambar']; ?>);"></div>
+            </div>
+
+            <div class="text pt-3 text-center">
+              <h3><?= $s['nama']; ?></h3>
+              <span class="position mb-2"><?= $s['tugas']; ?></span>
+              <div class="faded">
+                <p><?= $s['jabatan']; ?></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <?php endwhile; ?>
+    </div>
+  </div>
+</section>
+
 <section class="ftco-section ftco-no-pt ftc-no-pb">
   <div class="container">
     <div class="row d-flex">
@@ -49,22 +82,22 @@ include './header.php';
         <h2>Alur Pendaftaran</h2>
         <div>
           <div class="alert alert-warning" role="alert">
-            <h4 class="alert-heading">Pendaftaran</h4>
+            <h4 class="alert-heading">1) Pendaftaran</h4>
             <p>Peserta melakukan proses pendaftaran pada link berikut :</p>
             <a href="<?= $p['register']; ?>" class="btn btn-primary">Daftar</a>
           </div>
           <div class="alert alert-warning" role="alert">
-            <h4 class="alert-heading">Penulisan</h4>
+            <h4 class="alert-heading">2) Penulisan</h4>
             <p>Sesuaikan penulisan anda dengan template yang sudah disediakan</p>
             <a href="<?= $p['template']; ?>" target="_blank" class="btn btn-primary">Template</a>
           </div>
           <div class="alert alert-warning" role="alert">
-            <h4 class="alert-heading">Kirim Full Paper</h4>
+            <h4 class="alert-heading">3) Kirim Full Paper</h4>
             <p>Kirim Full Paper ke link tersedia </p>
             <a href="<?= $p['submit']; ?>" target="_blank" class="btn btn-primary">Submit Paper</a>
           </div>
           <div class="alert alert-warning" role="alert">
-            <h4 class="alert-heading">Bayar & Konfirmasi</h4>
+            <h4 class="alert-heading">4) Bayar & Konfirmasi</h4>
             <p>Pembayaran dilakukan melalui Rek BRI : </p>
             <div class="btn btn-primary"><b>0604010597508</b> a.n Suharsono Bantun</div>
             <hr>
