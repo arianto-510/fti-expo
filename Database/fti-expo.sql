@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 17, 2023 at 02:02 AM
+-- Generation Time: Jul 23, 2023 at 03:25 AM
 -- Server version: 5.7.24
 -- PHP Version: 8.0.1
 
@@ -39,6 +39,26 @@ CREATE TABLE `admin` (
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
 (1, 'admin', '$2y$10$yJ4AcMht0c6JWsydpKiH0u2tAg5ZJsnJLWMzNUkWE/a5iC4XW8hy.');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `banner`
+--
+
+CREATE TABLE `banner` (
+  `id` int(11) NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `deskripsi` varchar(255) NOT NULL,
+  `gambar` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `banner`
+--
+
+INSERT INTO `banner` (`id`, `nama`, `deskripsi`, `gambar`) VALUES
+(1, 'SEMPATIN', 'Seminar Pemanfaatan Sains dan Teknologi', '193005092_sempat1.jpg');
 
 -- --------------------------------------------------------
 
@@ -82,6 +102,25 @@ CREATE TABLE `daftar` (
 
 INSERT INTO `daftar` (`id`, `nama`, `instansi`, `hp`, `alamat`, `kelamin`, `jenis_kegiatan`, `motivasi`) VALUES
 (1, 'Arianto', 'USN Kolaka', '082349095', 'Bombana', 'Laki-Laki', 'Android Programming', 'Oke');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `expo`
+--
+
+CREATE TABLE `expo` (
+  `id` int(11) NOT NULL,
+  `deskripsi` text NOT NULL,
+  `gambar` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `expo`
+--
+
+INSERT INTO `expo` (`id`, `deskripsi`, `gambar`) VALUES
+(1, 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit sapiente autem nulla. Cumque odio debitis ex laudantium repudiandae, nihil perspiciatis vitae necessitatibus quibusdam totam doloremque, similique, vero a ullam?', 'paper.jpg');
 
 -- --------------------------------------------------------
 
@@ -143,6 +182,7 @@ CREATE TABLE `paper` (
   `register` varchar(255) NOT NULL,
   `template` varchar(255) NOT NULL,
   `submit` varchar(255) NOT NULL,
+  `background` varchar(255) NOT NULL,
   `tgl_kumpul` date NOT NULL,
   `tgl_pengumuman` date NOT NULL,
   `tgl_revisi` date NOT NULL,
@@ -154,8 +194,8 @@ CREATE TABLE `paper` (
 -- Dumping data for table `paper`
 --
 
-INSERT INTO `paper` (`id`, `tentang`, `register`, `template`, `submit`, `tgl_kumpul`, `tgl_pengumuman`, `tgl_revisi`, `tgl_kegiatan`, `gambar`) VALUES
-(1, 'IT Expo merupakan platform Seminar Nasional yang menampilkan artikel asli dari berbagai peneliti, akademisi, praktisi, dan pengusaha bisnis untuk menciptakan peluang penelitian yang berorientasi global di era pasca pandemi dengan memanfaatkan teknologi transformasi digital.Pagelaran SEMNAS Corisindo oleh ITB STIKOM Bali, CORIS dan INDOCEISS pada tanggal 11-12 Agustus 2022, bertempat di Bali, Indonesia, bertema “Seminar Nasional & Seminar Pengabdian Kepada Masyarakat”.', 'https://docs.google.com', 'https://docs.google.com', 'https://seminar.popakos.com/', '2023-07-11', '2023-07-27', '2023-07-26', '2023-07-19', '549659110_paper.jpg');
+INSERT INTO `paper` (`id`, `tentang`, `register`, `template`, `submit`, `background`, `tgl_kumpul`, `tgl_pengumuman`, `tgl_revisi`, `tgl_kegiatan`, `gambar`) VALUES
+(1, 'IT Expo merupakan platform Seminar Nasional yang menampilkan artikel asli dari berbagai peneliti, akademisi, praktisi, dan pengusaha bisnis untuk menciptakan peluang penelitian yang berorientasi global di era pasca pandemi dengan memanfaatkan teknologi transformasi digital.Pagelaran SEMNAS Corisindo oleh ITB STIKOM Bali, CORIS dan INDOCEISS pada tanggal 11-12 Agustus 2022, bertempat di Bali, Indonesia, bertema “Seminar Nasional &amp; Seminar Pengabdian Kepada Masyarakat”.', '#regis', 'https://docs.google.com', 'https://seminar.popakos.com/', 'https://docs.google.com', '2023-07-11', '2023-07-27', '2023-07-26', '2023-07-19', 'paper.jpg');
 
 -- --------------------------------------------------------
 
@@ -174,9 +214,7 @@ CREATE TABLE `patner` (
 --
 
 INSERT INTO `patner` (`id`, `nama`, `gambar`) VALUES
-(1, 'Tribun-Timur.com', '134320890_tt.jpg'),
-(2, 'Radio Swara Kolaka', '1681623036_sw.jpg'),
-(3, 'Zonasultra.id', '477463560_zona-sultra.jpg');
+(2, 'Radio Swara Kolaka', '1681623036_sw.jpg');
 
 -- --------------------------------------------------------
 
@@ -217,8 +255,9 @@ CREATE TABLE `speaker` (
 
 INSERT INTO `speaker` (`id`, `nama`, `tugas`, `jabatan`, `gambar`) VALUES
 (13, 'Dr. H. Nur Ihsan HL, M.Hum', 'Sambutan', 'Rektor Universitas Sembilanbelas November Kolaka', '245020951_rektor.png'),
-(15, 'Ir. Muh. Nurtanzis Sutoyo, S.Kom., M.Cs., IPP  ', 'Sambutan', 'Dekan Fakultas Teknologi Informasi', '1995593441_Dekan.png'),
-(19, 'Romi Satria Wahono, M.Eng., Ph.D', 'Keynote Speaker', 'Researcher and Technopreneur in Software Enginering, Enterprise Architecture and Data Science', '1976302870_romi.png');
+(14, 'Ir. Muh. Nurtanzis Sutoyo, S.Kom., M.Cs., IPP', 'Sambutan', 'Dekan Fakultas Teknologi Informasi', '1245746464_yes.png'),
+(15, 'Romi Satria Wahono, M.Eng., Ph.D', 'Keynote Speaker', 'Researcher and Technopreneur in Software Engineering, Enterprise Architecture and Data Science', '1409342223_romi.png'),
+(16, 'Dr. Andi Tenriawaru, S.Si., M.Si. ', 'Keynote Speaker', 'Kaprodi Ilmu Komputer UHO', '1498027178_no.png');
 
 -- --------------------------------------------------------
 
@@ -240,8 +279,7 @@ INSERT INTO `sponsor` (`id`, `nama`, `gambar`) VALUES
 (3, 'Taufik Computer', '1150789118_tc.jpg'),
 (4, 'Popakos.com', '1036910595_pk.jpg'),
 (5, 'Konawe Institute', '1513854038_ki.jpg'),
-(6, 'SAS Apparel', '1379325238_sas.jpg'),
-(7, 'Syahni Pabalu', '346007144_sp.jpg');
+(6, 'SAS Apparel', '1379325238_sas.jpg');
 
 -- --------------------------------------------------------
 
@@ -260,8 +298,8 @@ CREATE TABLE `support` (
 --
 
 INSERT INTO `support` (`id`, `nama`, `gambar`) VALUES
-(1, 'BEM FTI USN Kolaka', '1242140885_bem.jpg'),
-(2, 'HMPS-SI', '2128279550_hmps.jpg');
+(5, 'BEM FTI USN Kolaka', '1581599457_bem.jpg'),
+(6, 'HMPS-SI', '1099456233_hmps.jpg');
 
 -- --------------------------------------------------------
 
@@ -298,6 +336,12 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `banner`
+--
+ALTER TABLE `banner`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `belajar`
 --
 ALTER TABLE `belajar`
@@ -307,6 +351,12 @@ ALTER TABLE `belajar`
 -- Indexes for table `daftar`
 --
 ALTER TABLE `daftar`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `expo`
+--
+ALTER TABLE `expo`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -374,6 +424,12 @@ ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `banner`
+--
+ALTER TABLE `banner`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `belajar`
 --
 ALTER TABLE `belajar`
@@ -383,6 +439,12 @@ ALTER TABLE `belajar`
 -- AUTO_INCREMENT for table `daftar`
 --
 ALTER TABLE `daftar`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `expo`
+--
+ALTER TABLE `expo`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
@@ -407,7 +469,7 @@ ALTER TABLE `paper`
 -- AUTO_INCREMENT for table `patner`
 --
 ALTER TABLE `patner`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `repair`
@@ -419,19 +481,19 @@ ALTER TABLE `repair`
 -- AUTO_INCREMENT for table `speaker`
 --
 ALTER TABLE `speaker`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `sponsor`
 --
 ALTER TABLE `sponsor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `support`
 --
 ALTER TABLE `support`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `workshop`

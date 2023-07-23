@@ -55,6 +55,11 @@
 
 
             <!-- Nav Item - Charts -->
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="expo.php">
+                    <i class="fas fa-fw fa-bell"></i>
+                    <span>IT Expo</span></a>
+            </li> -->
             <li class="nav-item">
                 <a class="nav-link" href="speakers.php">
                     <i class="fas fa-fw fa-bell"></i>

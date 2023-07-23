@@ -22,10 +22,11 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
 </head>
 
-<body style="border: 3px solid-red;">
-    <nav class="navbar navbar-expand-lg navbar-light ftco-navbar-light" id="ftco-navbar">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" id="ftco-navbar" style="background-color: #ff6600;">
         <!-- ftco-navbar-light -->
         <div class="container d-flex align-items-center px-4">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,13 +36,13 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <a class="navbar-brand" href="index.php"><img src="./images/logo.png" width="80"></a>
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.php" class="nav-link pl-0"><span class="flaticon-houses mr-2"></span>Home</a></li>
-                    <li class="nav-item"><a href="call_paper.php" class="nav-link"><span class="flaticon-books mr-2"></span>SEMPATIN & Call For Paper</a></li>
-                    <li class="nav-item"><a href="pameran.php" class="nav-link"><span class="flaticon-jigsaw mr-2"></span>Pameran IT</a></li>
-                    <li class="nav-item"><a href="repair.php" class="nav-link"><span class="flaticon-security mr-2"></span>Free Repair</a></li>
-                    <li class="nav-item"><a href="workshop.php" class="nav-link"><span class="flaticon-diploma mr-2"></span>Workshop</a></li>
-                    <li class="nav-item"><a href="rundown.php" class="nav-link"><span class="flaticon-education mr-2"></span>Rundown</a></li>
-                    <li class="nav-item"><a href="contac.php" class="nav-link"><span class="flaticon-education mr-2"></span>Kontak</a></li>
+                    <li class="nav-item active"><a href="index.php" class="nav-link pl-0 text-white">Home</a></li>
+                    <li class="nav-item active"><a href="call_paper.php" class="nav-link text-white">SEMPATIN & Call For Paper</a></li>
+                    <li class="nav-item active"><a href="pameran.php" class="nav-link text-white">Pameran IT</a></li>
+                    <li class="nav-item active"><a href="repair.php" class="nav-link text-white">Free Repair</a></li>
+                    <li class="nav-item active"><a href="workshop.php" class="nav-link text-white">Workshop</a></li>
+                    <li class="nav-item active"><a href="rundown.php" class="nav-link text-white">Rundown</a></li>
+                    <li class="nav-item active"><a href="contac.php" class="nav-link text-white">Kontak</a></li>
                 </ul>
             </div>
         </div>

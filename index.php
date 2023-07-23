@@ -29,7 +29,9 @@ include './header.php';
 						<span class="flaticon-teacher"></span>
 					</div>
 					<div class="media-body p-2 mt-3">
-						<h3 class="heading">SEMPATIN dan Call For Paper</h3>
+						<a href="./call_paper.php">
+							<h3 class="heading">SEMPATIN dan Call For Paper</h3>
+						</a>
 						<p>Seminar Pemanafaatan Sains dan Teknologi Informasi FTI USN Kolaka</p>
 					</div>
 				</div>
@@ -107,9 +109,9 @@ include './header.php';
 <section class="ftco-section ftco-no-pt ftc-no-pb">
 	<div class="container">
 		<div class="row d-flex">
-			<!-- <div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
-				<div class="img" style="background-image: url(./admin/gambar/expo.jpg);"></div>
-			</div> -->
+			<div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
+				<div class="img" style="background-image: url(./admin/gambar/paper.jpg);"></div>
+			</div>
 			<div class="col-md-12 wrap-about py-5 pr-md-4 ftco-animate">
 				<h2 class="mb-4">Rangkaian Kegiatan IT Expo :</h2>
 				<div class="row mt-5">
@@ -164,24 +166,11 @@ include './header.php';
 	</div>
 </section>
 
+<h2 class="mb-4 text-center">Waktu Pelaksanaan</h2>
 <section class="ftco-section ftco-counter img mt-5" id="section-counter" data-stellar-background-ratio="0.5">
 	<div class="container">
-		<div class="row justify-content-center my-5 pb-2 d-flex">
-			<div class="col-md-6 align-items-stretch d-flex">
-				<div class="img img-video d-flex align-items-center" style="background-image: url(images/sempat1.jpg);">
-					<div class="video justify-content-center">
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 heading-section heading-section-white ftco-animate pl-lg-5 pt-md-0 pt-5">
-				<h2 class="mb-4">Tentang IT Expo FTI USN Kolaka</h2>
-				<?php $result = mysqli_query($conn, "SELECT * FROM paper");
-				$t = mysqli_fetch_row($result); ?>
-				<p class="text-justify">
-					<?= $t[1]; ?>
-				</p>
-			</div>
-		</div>
+		<!-- <div class="row justify-content-center my-5 pb-2 d-flex">
+		</div> -->
 		<div class="row d-md-flex align-items-center justify-content-center">
 			<div class="col-lg-12">
 				<div class="row d-md-flex align-items-center">
