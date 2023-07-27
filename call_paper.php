@@ -1,12 +1,12 @@
 <?php
 include './header.php';
 ?>
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/sempat1.jpg');">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('images/call.jpg');">
   <div class="overlay"></div>
   <div class="container">
     <div class="row no-gutters slider-text align-items-center justify-content-center">
       <div class="col-md-9 ftco-animate text-center">
-        <h1 class="mb-2 bread">Call of Paper</h1>
+        <h1 class="mb-2 bread">Call For Paper</h1>
         <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Call of Paper <i class="ion-ios-arrow-forward"></i></span></p>
       </div>
     </div>
@@ -56,20 +56,24 @@ include './header.php';
       <div class="col-md-5 wrap-about py-5 pr-md-4 ftco-animate">
         <h2 class="mb-4">Tanggal Penting</h2>
         <div>
-          <h5>Batas Pengumpulan Makalah</h5>
-          <p><?= $p['tgl_kumpul']; ?></p>
+          <h5>Batas Akhir Penerimaan Full Paper</h5>
+          <p>28 Agustus 2023</p>
         </div>
         <div>
-          <h5>Pengumuman Penerimaan Makalah</h5>
-          <p><?= $p['tgl_pengumuman']; ?></p>
+          <h5>Batas Akhir Pembayaran</h5>
+          <p>01 September 2023</p>
         </div>
         <div>
-          <h5>Batas Pengumpulan Akhir Revisi</h5>
-          <p><?= $p['tgl_revisi']; ?></p>
+          <h5>Batas Akhir Pendaftaran Partisipan (Non Pemakalah)</h5>
+          <p>03 September 2023</p>
         </div>
         <div>
-          <h5>Pelaksanaan Seminar</h5>
-          <p><?= $p['tgl_kegiatan']; ?></p>
+          <h5>Pelaksanaan Seminar Nasional</h5>
+          <p>04 September 2023</p>
+        </div>
+        <div>
+          <h5>Pelaksanaan Presentasi Paralel Pemakalah</h5>
+          <p>05 September 2023</p>
         </div>
         <div>
           <h2 class="mt-4">Link Penting</h2>

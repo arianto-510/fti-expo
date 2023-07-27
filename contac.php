@@ -35,13 +35,13 @@ include './header.php';
       <div class="col-md-3 d-flex">
         <div class="bg-light align-self-stretch box p-4 text-center">
           <h3 class="mb-4">Email Address</h3>
-          <p><a href="mailto:info@itexpoftiusn.com">info@itexpoftiusn.com</a></p>
+          <p><a href="mailto:info@itexpoftiusn.com">suharsonob@usn.ac.id</a></p>
         </div>
       </div>
       <div class="col-md-3 d-flex">
         <div class="bg-light align-self-stretch box p-4 text-center">
           <h3 class="mb-4">Website</h3>
-          <p><a href="#">fti.usn.ac.id/itexpo</a></p>
+          <p><a href="#">fti.usn.ac.id/it-expo</a></p>
         </div>
       </div>
     </div>

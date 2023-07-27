@@ -6,7 +6,7 @@ include './header.php';
 <section class="home-slider owl-carousel">
 	<?php $banner = mysqli_query($conn, "SELECT * FROM banner");
 	while ($b = mysqli_fetch_row($banner)) : ?>
-		<div class="slider-item" style="background-image:url(admin/gambar/<?= $b[3]; ?>)">
+		<div class="slider-item" style="background-image:url(admin/gambar/<?= $b[3]; ?>); height: 100%;">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
@@ -23,7 +23,7 @@ include './header.php';
 <section class="ftco-services ftco-no-pb">
 	<div class="container-wrap">
 		<div class="row no-gutters">
-			<div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
+			<div class="col-md-4 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #801424;">
 				<div class="media block-6 d-block text-center">
 					<div class="icon d-flex justify-content-center align-items-center">
 						<span class="flaticon-teacher"></span>
@@ -36,36 +36,29 @@ include './header.php';
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #001253;">
+			<div class="col-md-4 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #001253;">
 				<div class="media block-6 d-block text-center">
 					<div class="icon d-flex justify-content-center align-items-center">
 						<span class="flaticon-reading"></span>
 					</div>
 					<div class="media-body p-2 mt-3">
-						<h3 class="heading">Pameran IT</h3>
+						<a href="./pameran.php">
+							<h3 class="heading">Pameran IT</h3>
+						</a>
 						<p>Pementasan Hasil Karya Mahasiswa Fakultas Teknologi Informasi berupa Produk IT</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
+			<div class="col-md-4 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #801424;">
 				<div class="media block-6 d-block text-center">
 					<div class="icon d-flex justify-content-center align-items-center">
 						<span class="flaticon-books"></span>
 					</div>
 					<div class="media-body p-2 mt-3">
-						<h3 class="heading">Free Repair</h3>
+						<a href="./call_paper.php">
+							<h3 class="heading">Free Repair</h3>
+						</a>
 						<p>Jasa Perbaikan Perangkat Komputer/PC Secara Gratis</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate" style="background-color: #001253;">
-				<div class="media block-6 d-block text-center">
-					<div class="icon d-flex justify-content-center align-items-center">
-						<span class="flaticon-diploma"></span>
-					</div>
-					<div class="media-body p-2 mt-3">
-						<h3 class="heading">Workshop</h3>
-						<p>Pelatihan Pembelajaran Teknologi Informasi Dengan Konsentrasi Teknologi Informasi</p>
 					</div>
 				</div>
 			</div>
@@ -93,8 +86,8 @@ include './header.php';
 						</div>
 
 						<div class="text pt-3 text-center">
-							<h3><?= $s['nama']; ?></h3>
-							<span class="position mb-2"><?= $s['tugas']; ?></span>
+							<h4><?= $s['nama']; ?></h4>
+							<span class="position mb-2" style="color: #801424"><?= $s['tugas']; ?></span>
 							<div class="faded">
 								<p><?= $s['jabatan']; ?></p>
 							</div>
@@ -117,7 +110,7 @@ include './header.php';
 				<div class="row mt-5">
 					<div class="col-lg-6">
 						<a class="services-2 d-flex">
-							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-security"></span></div>
+							<div class="icon mt-2 d-flex bg-dark justify-content-center align-items-center"><span class="flaticon-security"></span></div>
 							<div class="text pl-3">
 								<h3>Seminar</h3>
 								<p>Seminar Nasional</p>
@@ -126,7 +119,7 @@ include './header.php';
 					</div>
 					<div class="col-lg-6">
 						<div class="services-2 d-flex">
-							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-security"></span></div>
+							<div class="icon mt-2 d-flex bg-dark justify-content-center align-items-center"><span class="flaticon-security"></span></div>
 							<div class="text pl-3">
 								<h3>Call of Paper</h3>
 								<p>Submit Artikel Ilmiah</p>
@@ -135,16 +128,7 @@ include './header.php';
 					</div>
 					<div class="col-lg-6">
 						<div class="services-2 d-flex">
-							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-reading"></span></div>
-							<div class="text pl-3">
-								<h3>Workshop</h3>
-								<p>Belajar IT</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6">
-						<div class="services-2 d-flex">
-							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-diploma"></span></div>
+							<div class="icon mt-2 d-flex bg-dark justify-content-center align-items-center"><span class="flaticon-diploma"></span></div>
 							<div class="text pl-3">
 								<h3>Free Repair</h3>
 								<p>Stand Services Gratis</p>
@@ -153,7 +137,7 @@ include './header.php';
 					</div>
 					<div class="col-lg-6">
 						<div class="services-2 d-flex">
-							<div class="icon mt-2 d-flex justify-content-center align-items-center"><span class="flaticon-education"></span></div>
+							<div class="icon mt-2 d-flex bg-dark justify-content-center align-items-center"><span class="flaticon-education"></span></div>
 							<div class="text pl-3">
 								<h3>Pameran</h3>
 								<p>Showing IT Product</p>
@@ -167,7 +151,7 @@ include './header.php';
 </section>
 
 <h2 class="mb-4 text-center">Waktu Pelaksanaan</h2>
-<section class="ftco-section ftco-counter img mt-5" id="section-counter" data-stellar-background-ratio="0.5">
+<section class="ftco-section ftco-counter img mt-5" id="section-counter" data-stellar-background-ratio="0.5" style="background-image: url('images/it-expo.jpg');">
 	<div class="container">
 		<!-- <div class="row justify-content-center my-5 pb-2 d-flex">
 		</div> -->

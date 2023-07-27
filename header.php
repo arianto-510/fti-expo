@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" id="ftco-navbar" style="background-color: #ff6600;">
+    <nav class="navbar navbar-expand-lg navbar-light" id="ftco-navbar" style="background-color: #801424;">
         <!-- ftco-navbar-light -->
         <div class="container d-flex align-items-center px-4">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,13 +34,12 @@
             </button>
 
             <div class="collapse navbar-collapse" id="ftco-nav">
-                <a class="navbar-brand" href="index.php"><img src="./images/logo.png" width="80"></a>
+                <a class="navbar-brand" href="index.php"><img src="./images/logow.png" width="80"></a>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="index.php" class="nav-link pl-0 text-white">Home</a></li>
                     <li class="nav-item active"><a href="call_paper.php" class="nav-link text-white">SEMPATIN & Call For Paper</a></li>
                     <li class="nav-item active"><a href="pameran.php" class="nav-link text-white">Pameran IT</a></li>
                     <li class="nav-item active"><a href="repair.php" class="nav-link text-white">Free Repair</a></li>
-                    <li class="nav-item active"><a href="workshop.php" class="nav-link text-white">Workshop</a></li>
                     <li class="nav-item active"><a href="rundown.php" class="nav-link text-white">Rundown</a></li>
                     <li class="nav-item active"><a href="contac.php" class="nav-link text-white">Kontak</a></li>
                 </ul>
